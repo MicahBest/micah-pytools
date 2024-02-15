@@ -1,0 +1,18 @@
+[project]
+name = "pytools-qol"
+version = "0.0.1"
+authors = [
+  { name="Micah Best", email="micahbest21@gmail.com" },
+]
+description = "Python tools that I use for quality of life programming"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/MicahBest/micah-pytools"
+Issues = "https://github.com/MicahBest/micah-pytools/issues"
