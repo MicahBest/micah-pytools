@@ -10,7 +10,7 @@ def print_execution_time(start_time) -> None:
     Returns:
         - None
     """
-    assert type(start_time) is float
+    assert isinstance(start_time, float)
     exec_time = time.time() - start_time
 
     nseconds = exec_time % 60
