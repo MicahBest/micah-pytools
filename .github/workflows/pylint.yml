@@ -20,4 +20,4 @@ jobs:
         pip install pylint
     - name: Analyzing the code with pylint
       run: |
-        pylint ./src/pytools-qol/
+        pylint ./src/
