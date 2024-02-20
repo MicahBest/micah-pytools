@@ -1,5 +1,6 @@
 import time
 
+
 def print_execution_time(start_time) -> None:
     """
     Prints the time it took to run a program after execution.
@@ -15,8 +16,8 @@ def print_execution_time(start_time) -> None:
 
     nseconds = exec_time % 60
     nminutes = exec_time // 60
-    nhours = exec_time // (60*60)
-    ndays = exec_time // (60*60*24)
+    nhours = exec_time // (60 * 60)
+    ndays = exec_time // (60 * 60 * 24)
 
     if ndays:
         print(f"Program executed in {ndays:.0f} days, {nhours:.0f} hours, {nminutes:.0f} minutes, {nseconds:.0f} seconds.")

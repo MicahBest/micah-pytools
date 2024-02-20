@@ -26,3 +26,6 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/MicahBest/pytools-qol"
 Issues = "https://github.com/MicahBest/pytools-qol/issues"
+
+[tool.black]
+line-length = 127
