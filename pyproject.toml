@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pytools-qol"
+name = "pytools_qol"
 version = "0.0.1"
 authors = [
   { name="Micah Best", email="micahbest21@gmail.com" },

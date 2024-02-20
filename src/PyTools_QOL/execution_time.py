@@ -12,18 +12,41 @@ def print_execution_time(start_time) -> None:
         - None
     """
     assert isinstance(start_time, float)
-    exec_time = time.time() - start_time
+    exec_time = round(time.time() - start_time)
 
-    nseconds = exec_time % 60
-    nminutes = exec_time // 60
-    nhours = exec_time // (60 * 60)
-    ndays = exec_time // (60 * 60 * 24)
+    ndays, remainder = divmod(exec_time, 86400)
+    nhours, remainder = divmod(remainder, 3600)
+    nminutes, nseconds = divmod(remainder, 60)
+
+    print("Program executed in", end=" ")
 
     if ndays:
-        print(f"Program executed in {ndays:.0f} days, {nhours:.0f} hours, {nminutes:.0f} minutes, {nseconds:.0f} seconds.")
-    elif nhours:
-        print(f"Program executed in {nhours:.0f} hours, {nminutes:.0f} minutes, {nseconds:.0f} seconds.")
-    elif nminutes:
-        print(f"Program executed in {nminutes:.0f} minutes, {nseconds:.0f} seconds.")
+        day_str = f"{ndays:.0f}"
+        if ndays == 1:
+            day_str += " day"
+        else:
+            day_str += " days"
+        print(day_str, end=", ")
+
+    if nhours:
+        hour_str = f"{nhours:.0f}"
+        if nhours == 1:
+            hour_str += " hour"
+        else:
+            hour_str += " hours"
+        print(hour_str, end=", ")
+
+    if nminutes:
+        minute_str = f"{nminutes:.0f}"
+        if nminutes == 1:
+            minute_str += " minute"
+        else:
+            minute_str += " minutes"
+        print(minute_str, end=", ")
+
+    second_str = f"{nseconds:.0f}"
+    if nseconds == 1:
+        second_str += " second"
     else:
-        print(f"Program executed in {nseconds:.0f} seconds.")
+        second_str += " seconds"
+    print(second_str, end=".\n")

@@ -1,2 +1,5 @@
+build/
 dist/
 pytools_qol.egg-info
+__pycache__
+.pytest_cache
