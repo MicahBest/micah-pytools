@@ -1,9 +1,9 @@
 import time
-from PyTools_QOL.execution_time import print_execution_time
+from PyTools_QOL import print_execution_time
 
 def test_zero(capfd):
     start_time = time.time()
-    
+
     print_execution_time(start_time)
     captured = capfd.readouterr()
     assert "Program executed in 0 seconds.\n" == captured.out
