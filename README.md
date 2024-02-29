@@ -7,7 +7,7 @@ Python tools that I use for quality of life programming
 Example usage:
 ```python
 import time
-from PyTools_QOL.execution_time import print_execution_time
+from PyTools_QOL import print_execution_time
 
 def main():
     time.sleep(3) # waits for 3 seconds
