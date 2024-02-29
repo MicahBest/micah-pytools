@@ -1,6 +1,8 @@
 # PyTools_QOL
 Python tools that I use for quality of life programming
 
+![GitHub Actions Status](https://img.shields.io/github/actions/workflow/status/MicahBest/PyTools_QOL/.github%2Fworkflows%2FPyTools_QOL.yml)
+
 ## Features and Capabilities
 
 ### Program Execution Time:
