@@ -3,6 +3,14 @@ Python tools that I use for quality of life programming
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/MicahBest/PyTools_QOL/.github%2Fworkflows%2FPyTools_QOL.yml?logo=github)
 
+## Installation Instructions
+Package information and installation instructions can be found on [PyPI](https://pypi.org/project/PyTools-QOL/).
+
+To install package:
+```bash
+pip install PyTools-QOL
+```
+
 ## Features and Capabilities
 
 ### Program Execution Time:
