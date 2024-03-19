@@ -24,7 +24,6 @@ def main():
     time.sleep(3) # waits for 3 seconds
 
 if __name__ == "__main__":
-    start_time = time.time()
     main()
-    print_execution_time(start_time) # > Program executed in 3 seconds.
+    print_execution_time() # > Program executed in 3 seconds.
 ```
