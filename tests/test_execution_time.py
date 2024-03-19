@@ -1,11 +1,13 @@
 import time
 from PyTools_QOL import print_execution_time
 
+
 def test_no_start_time_parameter(capfd):
 
     print_execution_time()
     captured = capfd.readouterr()
     assert "\nProgram executed in 0 seconds.\n\n" == captured.out
+
 
 def test_zero(capfd):
     start_time = time.time()
@@ -13,6 +15,7 @@ def test_zero(capfd):
     print_execution_time(start_time)
     captured = capfd.readouterr()
     assert "\nProgram executed in 0 seconds.\n\n" == captured.out
+
 
 def test_seconds(capfd):
     start_time = time.time()
