@@ -1,7 +1,8 @@
 import time
+import PyTools_QOL
 
 
-def print_execution_time(start_time) -> None:
+def print_execution_time(start_time=PyTools_QOL.START_TIME) -> None:
     """
     Prints the time it took to run a program after execution.
 
@@ -18,7 +19,7 @@ def print_execution_time(start_time) -> None:
     nhours, remainder = divmod(remainder, 3600)
     nminutes, nseconds = divmod(remainder, 60)
 
-    print("Program executed in", end=" ")
+    print("\nProgram executed in", end=" ")
 
     if ndays:
         day_str = f"{ndays:.0f}"
@@ -49,4 +50,4 @@ def print_execution_time(start_time) -> None:
         second_str += " second"
     else:
         second_str += " seconds"
-    print(second_str, end=".\n")
+    print(second_str, end=".\n\n")
