@@ -1,8 +1,8 @@
 import time
-import PyTools_QOL
+from PyTools_QOL import START_TIME
 
 
-def print_execution_time(start_time=PyTools_QOL.START_TIME) -> None:
+def print_execution_time(start_time=START_TIME) -> None:
     """
     Prints the time it took to run a program after execution.
 

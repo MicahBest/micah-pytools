@@ -22,7 +22,9 @@ disable=
     chained-comparison,
     fixme,
     eval-used,
-    deprecated-decorator
+    deprecated-decorator,
+    cyclic-import,
+    wrong-import-position
 
 [FORMAT]
 max-line-length=127
