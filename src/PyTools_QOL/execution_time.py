@@ -1,5 +1,6 @@
 import time
-from PyTools_QOL import START_TIME
+
+START_TIME = time.time()
 
 
 def print_execution_time(start_time=START_TIME) -> None:
